@@ -1,3 +1,8 @@
 allowBuilds:
   esbuild: true
   sharp: true
+minimumReleaseAgeExclude:
+  - '@dagilleland/layout-dashboard@0.1.0'
+  - '@dagilleland/layout-full-width@0.1.0'
+  - '@dagilleland/layout-minimal@0.1.0'
+  - '@dagilleland/layout-with-aside@0.1.0'

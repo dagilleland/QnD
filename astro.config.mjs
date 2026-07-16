@@ -8,6 +8,10 @@ export default defineConfig({
 	base: '/QnD',
 	integrations: [
 		starlight({
+			components: {
+				TwoColumnContent: './src/components/overrides/TwoColumnContent.astro',
+				ContentPanel: './src/components/overrides/ContentPanel.astro',
+			},
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
@@ -16,6 +20,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Deploying to GitHub Pages', slug: 'guides/github-pages-deploy' },
 					],
 				},
 				{

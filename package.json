@@ -2,7 +2,7 @@
   "name": "qnd",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@11.13.0",  
+  "packageManager": "pnpm@11.13.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,7 +12,14 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",
+    "@dagilleland/layout-dashboard": "^0.1.0",
+    "@dagilleland/layout-full-width": "^0.1.0",
+    "@dagilleland/layout-minimal": "^0.1.0",
+    "@dagilleland/layout-with-aside": "^0.1.0",
     "astro": "^7.0.2",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
   }
 }

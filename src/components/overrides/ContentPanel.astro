@@ -1,0 +1,27 @@
+---
+import Default from '@astrojs/starlight/components/ContentPanel.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const wide = entry.data.pageLayout === 'full-width';
+---
+
+{wide ? (
+  <div class="content-panel content-panel--uncapped">
+    <div class="uncapped-container">
+      <slot />
+    </div>
+  </div>
+) : (
+  <Default><slot /></Default>
+)}
+
+<style>
+  @layer starlight.core {
+    .content-panel--uncapped {
+      padding: 1.5rem var(--sl-content-pad-x);
+    }
+    .uncapped-container {
+      max-width: none;
+    }
+  }
+</style>
